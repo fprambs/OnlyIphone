@@ -1,0 +1,12 @@
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.csprojResolveAssemblyReference.cache
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Form1.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Properties.Resources.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.csproj.GenerateResource.Cache
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.csproj.CoreCompileInputs.cache
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\OnlyIphone.exe.config
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\OnlyIphone.exe
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\OnlyIphone.pdb
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\MySql.Data.dll
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\MySql.Data.xml
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.exe
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.pdb
