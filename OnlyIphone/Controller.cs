@@ -9,7 +9,11 @@ namespace OnlyIphone
 {
     class Controller
     {
-        // ------ Find user -----------
+        /// <summary>
+        /// Gets the user.
+        /// </summary>
+        /// <param name="username">The username.</param>
+        /// <returns></returns>
         public static User getUser(string username)
         {
             User user = new User();
