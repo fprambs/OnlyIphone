@@ -12,6 +12,7 @@ namespace OnlyIphone
     public class Utils
     {
 
+
         /// <summary>
         /// Encrypts the specified text.
         /// </summary>

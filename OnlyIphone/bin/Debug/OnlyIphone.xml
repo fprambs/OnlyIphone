@@ -4,13 +4,18 @@
         <name>OnlyIphone</name>
     </assembly>
     <members>
+        <member name="T:OnlyIphone.Connection">
+            <summary>
+            Class that provides the connection to the database
+            </summary>
+        </member>
         <member name="M:OnlyIphone.Connection.getConnection">
             <summary>
             Gets the connection to Database.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:OnlyIphone.Controller.getUser(System.String)">
+        <member name="M:OnlyIphone.Database.getUser(System.String)">
             <summary>
             Gets the user.
             </summary>
@@ -49,6 +54,13 @@
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
         </member>
+        <member name="M:OnlyIphone.Login.cancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the cancelButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
         <member name="F:OnlyIphone.Login.components">
             <summary>
             Variable del diseñador necesaria.
@@ -64,6 +76,23 @@
             <summary>
             Método necesario para admitir el Diseñador. No se puede modificar
             el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:OnlyIphone.Main_Windows.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OnlyIphone.Main_Windows.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OnlyIphone.Main_Windows.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="M:OnlyIphone.Program.Main">

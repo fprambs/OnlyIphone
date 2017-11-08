@@ -7,6 +7,9 @@ using MySql.Data.MySqlClient;
 
 namespace OnlyIphone
 {
+    /// <summary>
+    /// Class that provides the connection to the database
+    /// </summary>
     class Connection
     {
         /// <summary>

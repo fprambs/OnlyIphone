@@ -41,13 +41,17 @@ namespace OnlyIphone
 
                 User user = new User();
 
-                user = Controller.getUser(username);
+                user = Database.getUser(username);
 
                 try
                 {
                     if (Utils.Decrypt(user.Password) == password)
                     {
                         MessageBox.Show("Ingreso Exitoso, bienvenido "+user.Username, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Main_Windows mr = new Main_Windows();
+                        mr.send_username = user.Username;
+                        mr.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -104,6 +108,11 @@ namespace OnlyIphone
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cancelButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();

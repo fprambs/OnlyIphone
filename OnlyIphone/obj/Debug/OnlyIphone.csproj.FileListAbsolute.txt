@@ -11,3 +11,6 @@ C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.exe
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.pdb
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\OnlyIphone.xml
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Login.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Main_Windows.resources
