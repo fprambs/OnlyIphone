@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace OnlyIphone
 {
@@ -37,6 +38,19 @@ namespace OnlyIphone
             byte[] decryted = Convert.FromBase64String(text);
             result = System.Text.Encoding.Unicode.GetString(decryted);
             return result;
+        }
+
+        /// <summary>
+        /// Firsts the letter to upeer.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns></returns>
+        public static string FirstLetterToUpeer(string text)
+        {
+             text = text.ToLower().Trim();
+             text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(text.ToLower());
+             return text;
+ 
         }
     }
 }

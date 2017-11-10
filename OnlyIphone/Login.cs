@@ -49,7 +49,7 @@ namespace OnlyIphone
                     {
                         MessageBox.Show("Ingreso Exitoso, bienvenido "+user.Username, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Main_Windows mr = new Main_Windows();
-                        mr.send_username = user.Username;
+                        //mr.send_username = user.Username;
                         mr.Show();
                         this.Hide();
                     }
@@ -116,6 +116,11 @@ namespace OnlyIphone
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

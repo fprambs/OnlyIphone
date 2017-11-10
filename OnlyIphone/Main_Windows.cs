@@ -12,122 +12,123 @@ namespace OnlyIphone
 {
     public partial class Main_Windows : Form
     {
-        public string send_username;
         public Main_Windows()
         {
             InitializeComponent();
         }
 
-        private void closePictureBox_Click(object sender, EventArgs e)
+        private bool mouseDown;
+        private Point lastLocation;
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
-            Application.Exit();
+
         }
 
-        private void minimizePictureBox_Click(object sender, EventArgs e)
+        private void Main_Windows1_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+
         }
 
-        private void Main_Windows_Load(object sender, EventArgs e)
+        private void Main_Windows1_MouseDown(object sender, MouseEventArgs e)
         {
-            welcomeLabel.Text = "Bienvenido " + send_username;
+            mouseDown = true;
+            lastLocation = e.Location;
         }
 
-        private void mainButton_MouseMove(object sender, MouseEventArgs e)
+        private void Main_Windows1_MouseMove(object sender, MouseEventArgs e)
         {
-            mainRectangle.BackColor = Color.DarkOrange;
-            mainRectangle.BorderColor = Color.DarkOrange;
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+
         }
 
-        private void mainButton_MouseLeave(object sender, EventArgs e)
+        private void Main_Windows1_MouseUp(object sender, MouseEventArgs e)
         {
-            mainRectangle.BackColor = Color.DimGray;
-            mainRectangle.BorderColor = Color.DimGray;
+            mouseDown = false;
         }
 
-        private void cashboxButton_MouseMove(object sender, MouseEventArgs e)
+        private void mainButton_Click(object sender, EventArgs e)
         {
-            cashboxRectangle.BackColor = Color.DarkOrange;
-            cashboxRectangle.BorderColor = Color.DarkOrange;
+            toggle(sender);
+
+            if (!containerPanel.Controls.Contains(main.Instance))
+            {
+                containerPanel.Controls.Add(main.Instance);
+                main.Instance.Dock = DockStyle.Fill;
+                main.Instance.BringToFront();
+            }
+            else
+            {
+                main.Instance.BringToFront();
+            }
         }
 
-        private void cashboxButton_MouseLeave(object sender, EventArgs e)
+
+
+        void toggle(object sender)
         {
-            cashboxRectangle.BackColor = Color.DimGray;
-            cashboxRectangle.BorderColor = Color.DimGray;
+            mainButton.selected = false;
+            cashboxButton.selected = false;
+            clientButton.selected = false;
+            salesButton.selected = false;
+            productsButton.selected = false;
+            inventoryButton.selected = false;
+            usersButton.selected = false;
+            reportsButton.selected = false;
+
+            mainButton.Normalcolor = Color.OrangeRed;
+            cashboxButton.Normalcolor = Color.OrangeRed;
+            clientButton.Normalcolor = Color.OrangeRed;
+            salesButton.Normalcolor = Color.OrangeRed;
+            productsButton.Normalcolor = Color.OrangeRed;
+            inventoryButton.Normalcolor = Color.OrangeRed;
+            usersButton.Normalcolor = Color.OrangeRed;
+            reportsButton.Normalcolor = Color.OrangeRed;
+
+
+            ((Bunifu.Framework.UI.BunifuFlatButton)sender).selected = true;
+            ((Bunifu.Framework.UI.BunifuFlatButton)sender).Normalcolor = Color.DimGray;
         }
 
-        private void clientButton_MouseMove(object sender, MouseEventArgs e)
+        private void cashboxButton_Click(object sender, EventArgs e)
         {
-            clientRectangle.BackColor = Color.DarkOrange;
-            clientRectangle.BorderColor = Color.DarkOrange;
+            toggle(sender);
         }
 
-        private void clientButton_MouseLeave(object sender, EventArgs e)
+        private void clientButton_Click(object sender, EventArgs e)
         {
-            clientRectangle.BackColor = Color.DimGray;
-            clientRectangle.BorderColor = Color.DimGray;
+            toggle(sender);
         }
 
-        private void saleButton_MouseMove(object sender, MouseEventArgs e)
+        private void salesButton_Click(object sender, EventArgs e)
         {
-            saleRectangle.BackColor = Color.DarkOrange;
-            saleRectangle.BorderColor = Color.DarkOrange;
+            toggle(sender);
         }
 
-        private void saleButton_MouseLeave(object sender, EventArgs e)
+        private void productsButton_Click(object sender, EventArgs e)
         {
-            saleRectangle.BackColor = Color.DimGray;
-            saleRectangle.BorderColor = Color.DimGray;
+            toggle(sender);
         }
 
-        private void productButton_MouseMove(object sender, MouseEventArgs e)
+        private void inventoryButton_Click(object sender, EventArgs e)
         {
-            productRectangle.BackColor = Color.DarkOrange;
-            productRectangle.BorderColor = Color.DarkOrange;
+            toggle(sender);
         }
 
-        private void productButton_MouseLeave(object sender, EventArgs e)
+        private void usersButton_Click(object sender, EventArgs e)
         {
-            productRectangle.BackColor = Color.DimGray;
-            productRectangle.BorderColor = Color.DimGray;
+            toggle(sender);
         }
 
-        private void inventoryButton_MouseMove(object sender, MouseEventArgs e)
+        private void reportsButton_Click(object sender, EventArgs e)
         {
-            inventoryRectangle.BackColor = Color.DarkOrange;
-            inventoryRectangle.BorderColor = Color.DarkOrange;
+            toggle(sender);
         }
 
-        private void inventoryButton_MouseLeave(object sender, EventArgs e)
-        {
-            inventoryRectangle.BackColor = Color.DimGray;
-            inventoryRectangle.BorderColor = Color.DimGray;
-        }
-
-        private void userButton_MouseMove(object sender, MouseEventArgs e)
-        {
-            usersRectangle.BackColor = Color.DarkOrange;
-            usersRectangle.BorderColor = Color.DarkOrange;
-        }
-
-        private void userButton_MouseLeave(object sender, EventArgs e)
-        {
-            usersRectangle.BackColor = Color.DimGray;
-            usersRectangle.BorderColor = Color.DimGray;
-        }
-
-        private void reportsButton_MouseMove(object sender, MouseEventArgs e)
-        {
-            reportsRectangle.BackColor = Color.DarkOrange;
-            reportsRectangle.BorderColor = Color.DarkOrange;
-        }
-
-        private void reportsButton_MouseLeave(object sender, EventArgs e)
-        {
-            reportsRectangle.BackColor = Color.DimGray;
-            reportsRectangle.BorderColor = Color.DimGray;
-        }
     }
 }
