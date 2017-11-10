@@ -12,6 +12,7 @@ namespace OnlyIphone
 {
     public partial class Main_Windows : Form
     {
+        public string send_username;
         public Main_Windows()
         {
             InitializeComponent();
@@ -19,37 +20,13 @@ namespace OnlyIphone
 
         private bool mouseDown;
         private Point lastLocation;
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
+    
         private void Main_Windows1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Main_Windows1_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseDown = true;
-            lastLocation = e.Location;
-        }
-
-        private void Main_Windows1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mouseDown)
-            {
-                this.Location = new Point(
-                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
-
-                this.Update();
-            }
-
-        }
-
-        private void Main_Windows1_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseDown = false;
+            this.CenterToScreen();
+            welcomeLabel.Text = "Bienvenido " + send_username;
         }
 
         private void mainButton_Click(object sender, EventArgs e)
@@ -67,8 +44,6 @@ namespace OnlyIphone
                 main.Instance.BringToFront();
             }
         }
-
-
 
         void toggle(object sender)
         {
@@ -130,5 +105,26 @@ namespace OnlyIphone
             toggle(sender);
         }
 
+        private void headerPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void headerPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void headerPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
     }
 }

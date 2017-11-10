@@ -42,6 +42,7 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.containerPanel = new System.Windows.Forms.Panel();
+            this.welcomeLabel = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +56,9 @@
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(900, 42);
             this.headerPanel.TabIndex = 1;
+            this.headerPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseDown);
+            this.headerPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseMove);
+            this.headerPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseUp);
             // 
             // menuPanel
             // 
@@ -356,6 +360,7 @@
             // 
             // logoPanel
             // 
+            this.logoPanel.Controls.Add(this.welcomeLabel);
             this.logoPanel.Controls.Add(this.pictureBox1);
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
@@ -380,7 +385,18 @@
             this.containerPanel.Size = new System.Drawing.Size(710, 492);
             this.containerPanel.TabIndex = 3;
             // 
-            // Main_Windows1
+            // welcomeLabel
+            // 
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.ForeColor = System.Drawing.Color.White;
+            this.welcomeLabel.Location = new System.Drawing.Point(24, 127);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(80, 14);
+            this.welcomeLabel.TabIndex = 0;
+            this.welcomeLabel.Text = "Bienvenido";
+            // 
+            // Main_Windows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -390,14 +406,12 @@
             this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.headerPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main_Windows1";
+            this.Name = "Main_Windows";
             this.Text = "Main_Windows1";
             this.Load += new System.EventHandler(this.Main_Windows1_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_Windows1_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Main_Windows1_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Main_Windows1_MouseUp);
             this.menuPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
+            this.logoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -418,5 +432,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton usersButton;
         private Bunifu.Framework.UI.BunifuFlatButton reportsButton;
         private System.Windows.Forms.Panel containerPanel;
+        private System.Windows.Forms.Label welcomeLabel;
     }
 }

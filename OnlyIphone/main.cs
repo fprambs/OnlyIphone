@@ -33,13 +33,23 @@ namespace OnlyIphone
         public main()
         {
  
-              InitializeComponent(); 
-            
+              InitializeComponent();
+              timer1.Enabled = true;
+
         }
 
         private void main_Load(object sender, EventArgs e)
         {
+            DateTime dateValue = DateTime.Now;
+            dayNumerLabel.Text = dateValue.ToString("dd");
+            dayNameLabel.Text = Utils.FirstLetterToUpeer(dateValue.ToString("dddd"));
+            monthLabel.Text = Utils.FirstLetterToUpeer(dateValue.ToString("MMMM"));
+            yearLabel.Text = dateValue.ToString("yyyy");
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeLabel.Text = DateTime.Now.ToString("T");
         }
     }
 }
