@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlyIphone
 {
-    public partial class providers : UserControl
+    public partial class products : UserControl
     {
-        private static providers _instance;
+        private static products _instance;
 
         /// <summary>
         /// Gets the instance.
@@ -20,39 +20,30 @@ namespace OnlyIphone
         /// <value>
         /// The instance.
         /// </value>
-        public static providers Instance
+        public static products Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new providers();
+                    _instance = new products();
                 return _instance;
             }
         }
-        public providers()
+        public products()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            addProviders newProvider = new addProviders();
-            newProvider.Show();
-        }
-
-        private void providers_Load(object sender, EventArgs e)
-        {
-            List<Provider> list = new List<Provider>();
-            list = Database.listProviders();
-            providerdataGridView.DataSource = list;
-
+            addProducts prd = new addProducts();
+            prd.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<Provider> list = new List<Provider>();
-            list = Database.listProviders();
-            providerdataGridView.DataSource = list;
+            addType newtype = new addType();
+            newtype.Show();
         }
     }
 }

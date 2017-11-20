@@ -244,6 +244,7 @@
             this.productsButton.TabIndex = 4;
             this.productsButton.Text = "Productos";
             this.productsButton.UseVisualStyleBackColor = false;
+            this.productsButton.Click += new System.EventHandler(this.productsButton_Click);
             // 
             // salesButton
             // 

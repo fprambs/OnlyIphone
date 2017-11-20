@@ -14,7 +14,9 @@ C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Login.resource
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Main_Windows.resources
-C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.main.resources
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.providers.resources
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.addProviders.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.products.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.addProducts.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.addType.resources

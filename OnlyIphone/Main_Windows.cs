@@ -79,5 +79,19 @@ namespace OnlyIphone
                 providers.Instance.BringToFront();
             }
         }
+
+        private void productsButton_Click(object sender, EventArgs e)
+        {
+            if (!containerPanel.Controls.Contains(products.Instance))
+            {
+                containerPanel.Controls.Add(products.Instance);
+                products.Instance.Dock = DockStyle.Fill;
+                products.Instance.BringToFront();
+            }
+            else
+            {
+                products.Instance.BringToFront();
+            }
+        }
     }
 }

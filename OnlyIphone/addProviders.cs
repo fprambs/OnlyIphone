@@ -151,6 +151,7 @@ namespace OnlyIphone
                     {
                         MessageBox.Show("Proveedor ingresado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
+              
                     }
                     catch (Exception l)
                     {
@@ -163,6 +164,8 @@ namespace OnlyIphone
                     MessageBox.Show("Error al ingresar el proveedor, revise la información", "Información", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+
+
         }
 
         private void headerPanel_MouseDown(object sender, MouseEventArgs e)

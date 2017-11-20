@@ -52,6 +52,8 @@
             this.citycrossPictureBox = new System.Windows.Forms.PictureBox();
             this.acceptButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.iconPictureBox = new System.Windows.Forms.PictureBox();
+            this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namecheckPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonecheckPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailcheckPictureBox)).BeginInit();
@@ -62,11 +64,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.emailcrossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addresscrossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.citycrossPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.DimGray;
+            this.headerPanel.Controls.Add(this.iconPictureBox);
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(284, 30);
@@ -296,6 +300,16 @@
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
+            // iconPictureBox
+            // 
+            this.iconPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPictureBox.Image")));
+            this.iconPictureBox.Location = new System.Drawing.Point(15, 1);
+            this.iconPictureBox.Name = "iconPictureBox";
+            this.iconPictureBox.Size = new System.Drawing.Size(30, 30);
+            this.iconPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox.TabIndex = 0;
+            this.iconPictureBox.TabStop = false;
+            // 
             // addProviders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,6 +341,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addProviders";
             this.Text = "addProviders";
+            this.headerPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.namecheckPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonecheckPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailcheckPictureBox)).EndInit();
@@ -337,6 +352,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emailcrossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addresscrossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.citycrossPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +383,6 @@
         private System.Windows.Forms.PictureBox citycrossPictureBox;
         private System.Windows.Forms.Button acceptButton;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.PictureBox iconPictureBox;
     }
 }

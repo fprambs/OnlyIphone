@@ -50,5 +50,49 @@ namespace OnlyIphone
                 return retorno;
             }
         }
+
+        public static List<Provider> listProviders()
+        {
+
+            List<Provider> _list = new List<Provider>();
+            MySqlCommand _comando = new MySqlCommand(String.Format(
+            "SELECT name, phone, email, address, city FROM provider "), Connection.getConnection());
+            MySqlDataReader _reader = _comando.ExecuteReader();
+
+            while (_reader.Read())
+            {
+                Provider Prv = new Provider();
+
+                Prv.Name = _reader.GetString(0);
+                Prv.Phone = _reader.GetInt32(1);
+                Prv.Email = _reader.GetString(2);
+                Prv.Address = _reader.GetString(3);
+                Prv.City = _reader.GetString(4);
+
+
+                _list.Add(Prv);
+            }
+
+            return _list;
+        }
+
+        public static int addType(Type type)
+        {
+            int retorno = 0;
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into type (name) values ('{0}')", type.Name), Connection.getConnection());
+                retorno = comando.ExecuteNonQuery();
+                return retorno;
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("No se pudo agregar el tipo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return retorno;
+            }
+        }
     }
 }
