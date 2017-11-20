@@ -4,6 +4,23 @@
         <name>OnlyIphone</name>
     </assembly>
     <members>
+        <member name="F:OnlyIphone.addProviders.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OnlyIphone.addProviders.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OnlyIphone.addProviders.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:OnlyIphone.Connection">
             <summary>
             Class that provides the connection to the database
@@ -123,6 +140,31 @@
         <member name="M:OnlyIphone.Program.Main">
             <summary>
             Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="P:OnlyIphone.providers.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="F:OnlyIphone.providers.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:OnlyIphone.providers.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:OnlyIphone.providers.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
             </summary>
         </member>
         <member name="T:OnlyIphone.Utils">

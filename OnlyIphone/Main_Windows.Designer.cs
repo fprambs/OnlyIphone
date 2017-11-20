@@ -31,18 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Windows));
             this.headerPanel = new System.Windows.Forms.Panel();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.reportsButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.usersButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.inventoryButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.productsButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.salesButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.clientButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.cashboxButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.mainButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.providersButton = new System.Windows.Forms.Button();
+            this.mainButton = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.containerPanel = new System.Windows.Forms.Panel();
             this.welcomeLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reportsButton = new System.Windows.Forms.Button();
+            this.usersButton = new System.Windows.Forms.Button();
+            this.cashboxButton = new System.Windows.Forms.Button();
+            this.inventoryButton = new System.Windows.Forms.Button();
+            this.productsButton = new System.Windows.Forms.Button();
+            this.salesButton = new System.Windows.Forms.Button();
+            this.clientsButton = new System.Windows.Forms.Button();
+            this.containerPanel = new System.Windows.Forms.Panel();
             this.menuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,299 +64,60 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuPanel.Controls.Add(this.providersButton);
+            this.menuPanel.Controls.Add(this.mainButton);
+            this.menuPanel.Controls.Add(this.logoPanel);
             this.menuPanel.Controls.Add(this.reportsButton);
             this.menuPanel.Controls.Add(this.usersButton);
+            this.menuPanel.Controls.Add(this.cashboxButton);
             this.menuPanel.Controls.Add(this.inventoryButton);
             this.menuPanel.Controls.Add(this.productsButton);
             this.menuPanel.Controls.Add(this.salesButton);
-            this.menuPanel.Controls.Add(this.clientButton);
-            this.menuPanel.Controls.Add(this.cashboxButton);
-            this.menuPanel.Controls.Add(this.mainButton);
-            this.menuPanel.Controls.Add(this.logoPanel);
+            this.menuPanel.Controls.Add(this.clientsButton);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 42);
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(190, 492);
             this.menuPanel.TabIndex = 2;
             // 
-            // reportsButton
+            // providersButton
             // 
-            this.reportsButton.Activecolor = System.Drawing.Color.DimGray;
-            this.reportsButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.reportsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.reportsButton.BorderRadius = 0;
-            this.reportsButton.ButtonText = "Reportes";
-            this.reportsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reportsButton.DisabledColor = System.Drawing.Color.Gray;
-            this.reportsButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.reportsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("reportsButton.Iconimage")));
-            this.reportsButton.Iconimage_right = null;
-            this.reportsButton.Iconimage_right_Selected = null;
-            this.reportsButton.Iconimage_Selected = null;
-            this.reportsButton.IconMarginLeft = 15;
-            this.reportsButton.IconMarginRight = 0;
-            this.reportsButton.IconRightVisible = true;
-            this.reportsButton.IconRightZoom = 0D;
-            this.reportsButton.IconVisible = true;
-            this.reportsButton.IconZoom = 38D;
-            this.reportsButton.IsTab = false;
-            this.reportsButton.Location = new System.Drawing.Point(0, 451);
-            this.reportsButton.Name = "reportsButton";
-            this.reportsButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.reportsButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.reportsButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.reportsButton.selected = false;
-            this.reportsButton.Size = new System.Drawing.Size(190, 37);
-            this.reportsButton.TabIndex = 10;
-            this.reportsButton.Text = "Reportes";
-            this.reportsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.reportsButton.Textcolor = System.Drawing.Color.White;
-            this.reportsButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportsButton.Click += new System.EventHandler(this.reportsButton_Click);
-            // 
-            // usersButton
-            // 
-            this.usersButton.Activecolor = System.Drawing.Color.DimGray;
-            this.usersButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.usersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.usersButton.BorderRadius = 0;
-            this.usersButton.ButtonText = "Usuarios";
-            this.usersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.usersButton.DisabledColor = System.Drawing.Color.Gray;
-            this.usersButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.usersButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("usersButton.Iconimage")));
-            this.usersButton.Iconimage_right = null;
-            this.usersButton.Iconimage_right_Selected = null;
-            this.usersButton.Iconimage_Selected = null;
-            this.usersButton.IconMarginLeft = 15;
-            this.usersButton.IconMarginRight = 0;
-            this.usersButton.IconRightVisible = true;
-            this.usersButton.IconRightZoom = 0D;
-            this.usersButton.IconVisible = true;
-            this.usersButton.IconZoom = 38D;
-            this.usersButton.IsTab = false;
-            this.usersButton.Location = new System.Drawing.Point(0, 409);
-            this.usersButton.Name = "usersButton";
-            this.usersButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.usersButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.usersButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.usersButton.selected = false;
-            this.usersButton.Size = new System.Drawing.Size(190, 37);
-            this.usersButton.TabIndex = 9;
-            this.usersButton.Text = "Usuarios";
-            this.usersButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.usersButton.Textcolor = System.Drawing.Color.White;
-            this.usersButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usersButton.Click += new System.EventHandler(this.usersButton_Click);
-            // 
-            // inventoryButton
-            // 
-            this.inventoryButton.Activecolor = System.Drawing.Color.DimGray;
-            this.inventoryButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.inventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.inventoryButton.BorderRadius = 0;
-            this.inventoryButton.ButtonText = "Inventario";
-            this.inventoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.inventoryButton.DisabledColor = System.Drawing.Color.Gray;
-            this.inventoryButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.inventoryButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("inventoryButton.Iconimage")));
-            this.inventoryButton.Iconimage_right = null;
-            this.inventoryButton.Iconimage_right_Selected = null;
-            this.inventoryButton.Iconimage_Selected = null;
-            this.inventoryButton.IconMarginLeft = 15;
-            this.inventoryButton.IconMarginRight = 0;
-            this.inventoryButton.IconRightVisible = true;
-            this.inventoryButton.IconRightZoom = 0D;
-            this.inventoryButton.IconVisible = true;
-            this.inventoryButton.IconZoom = 38D;
-            this.inventoryButton.IsTab = false;
-            this.inventoryButton.Location = new System.Drawing.Point(0, 366);
-            this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.inventoryButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.inventoryButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.inventoryButton.selected = false;
-            this.inventoryButton.Size = new System.Drawing.Size(190, 37);
-            this.inventoryButton.TabIndex = 8;
-            this.inventoryButton.Text = "Inventario";
-            this.inventoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.inventoryButton.Textcolor = System.Drawing.Color.White;
-            this.inventoryButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
-            // 
-            // productsButton
-            // 
-            this.productsButton.Activecolor = System.Drawing.Color.DimGray;
-            this.productsButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.productsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.productsButton.BorderRadius = 0;
-            this.productsButton.ButtonText = "Productos";
-            this.productsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.productsButton.DisabledColor = System.Drawing.Color.Gray;
-            this.productsButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.productsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("productsButton.Iconimage")));
-            this.productsButton.Iconimage_right = null;
-            this.productsButton.Iconimage_right_Selected = null;
-            this.productsButton.Iconimage_Selected = null;
-            this.productsButton.IconMarginLeft = 15;
-            this.productsButton.IconMarginRight = 0;
-            this.productsButton.IconRightVisible = true;
-            this.productsButton.IconRightZoom = 0D;
-            this.productsButton.IconVisible = true;
-            this.productsButton.IconZoom = 38D;
-            this.productsButton.IsTab = false;
-            this.productsButton.Location = new System.Drawing.Point(0, 323);
-            this.productsButton.Name = "productsButton";
-            this.productsButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.productsButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.productsButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.productsButton.selected = false;
-            this.productsButton.Size = new System.Drawing.Size(190, 37);
-            this.productsButton.TabIndex = 7;
-            this.productsButton.Text = "Productos";
-            this.productsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.productsButton.Textcolor = System.Drawing.Color.White;
-            this.productsButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productsButton.Click += new System.EventHandler(this.productsButton_Click);
-            // 
-            // salesButton
-            // 
-            this.salesButton.Activecolor = System.Drawing.Color.DimGray;
-            this.salesButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.salesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.salesButton.BorderRadius = 0;
-            this.salesButton.ButtonText = "Ventas";
-            this.salesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.salesButton.DisabledColor = System.Drawing.Color.Gray;
-            this.salesButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.salesButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("salesButton.Iconimage")));
-            this.salesButton.Iconimage_right = null;
-            this.salesButton.Iconimage_right_Selected = null;
-            this.salesButton.Iconimage_Selected = null;
-            this.salesButton.IconMarginLeft = 15;
-            this.salesButton.IconMarginRight = 0;
-            this.salesButton.IconRightVisible = true;
-            this.salesButton.IconRightZoom = 0D;
-            this.salesButton.IconVisible = true;
-            this.salesButton.IconZoom = 38D;
-            this.salesButton.IsTab = false;
-            this.salesButton.Location = new System.Drawing.Point(0, 280);
-            this.salesButton.Name = "salesButton";
-            this.salesButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.salesButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.salesButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.salesButton.selected = false;
-            this.salesButton.Size = new System.Drawing.Size(190, 37);
-            this.salesButton.TabIndex = 6;
-            this.salesButton.Text = "Ventas";
-            this.salesButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.salesButton.Textcolor = System.Drawing.Color.White;
-            this.salesButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salesButton.Click += new System.EventHandler(this.salesButton_Click);
-            // 
-            // clientButton
-            // 
-            this.clientButton.Activecolor = System.Drawing.Color.DimGray;
-            this.clientButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.clientButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clientButton.BorderRadius = 0;
-            this.clientButton.ButtonText = "Clientes";
-            this.clientButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clientButton.DisabledColor = System.Drawing.Color.Gray;
-            this.clientButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.clientButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("clientButton.Iconimage")));
-            this.clientButton.Iconimage_right = null;
-            this.clientButton.Iconimage_right_Selected = null;
-            this.clientButton.Iconimage_Selected = null;
-            this.clientButton.IconMarginLeft = 15;
-            this.clientButton.IconMarginRight = 0;
-            this.clientButton.IconRightVisible = true;
-            this.clientButton.IconRightZoom = 0D;
-            this.clientButton.IconVisible = true;
-            this.clientButton.IconZoom = 38D;
-            this.clientButton.IsTab = false;
-            this.clientButton.Location = new System.Drawing.Point(0, 237);
-            this.clientButton.Name = "clientButton";
-            this.clientButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.clientButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.clientButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.clientButton.selected = false;
-            this.clientButton.Size = new System.Drawing.Size(190, 37);
-            this.clientButton.TabIndex = 5;
-            this.clientButton.Text = "Clientes";
-            this.clientButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.clientButton.Textcolor = System.Drawing.Color.White;
-            this.clientButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientButton.Click += new System.EventHandler(this.clientButton_Click);
-            // 
-            // cashboxButton
-            // 
-            this.cashboxButton.Activecolor = System.Drawing.Color.DimGray;
-            this.cashboxButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.cashboxButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cashboxButton.BorderRadius = 0;
-            this.cashboxButton.ButtonText = "Caja";
-            this.cashboxButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cashboxButton.DisabledColor = System.Drawing.Color.Gray;
-            this.cashboxButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.cashboxButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("cashboxButton.Iconimage")));
-            this.cashboxButton.Iconimage_right = null;
-            this.cashboxButton.Iconimage_right_Selected = null;
-            this.cashboxButton.Iconimage_Selected = null;
-            this.cashboxButton.IconMarginLeft = 15;
-            this.cashboxButton.IconMarginRight = 0;
-            this.cashboxButton.IconRightVisible = true;
-            this.cashboxButton.IconRightZoom = 0D;
-            this.cashboxButton.IconVisible = true;
-            this.cashboxButton.IconZoom = 38D;
-            this.cashboxButton.IsTab = false;
-            this.cashboxButton.Location = new System.Drawing.Point(0, 194);
-            this.cashboxButton.Name = "cashboxButton";
-            this.cashboxButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.cashboxButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.cashboxButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.cashboxButton.selected = false;
-            this.cashboxButton.Size = new System.Drawing.Size(190, 37);
-            this.cashboxButton.TabIndex = 4;
-            this.cashboxButton.Text = "Caja";
-            this.cashboxButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cashboxButton.Textcolor = System.Drawing.Color.White;
-            this.cashboxButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashboxButton.Click += new System.EventHandler(this.cashboxButton_Click);
+            this.providersButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.providersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.providersButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.providersButton.FlatAppearance.BorderSize = 0;
+            this.providersButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.providersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.providersButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.providersButton.ForeColor = System.Drawing.Color.White;
+            this.providersButton.Image = ((System.Drawing.Image)(resources.GetObject("providersButton.Image")));
+            this.providersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.providersButton.Location = new System.Drawing.Point(1, 415);
+            this.providersButton.Name = "providersButton";
+            this.providersButton.Size = new System.Drawing.Size(190, 37);
+            this.providersButton.TabIndex = 8;
+            this.providersButton.Text = "Proveedores";
+            this.providersButton.UseVisualStyleBackColor = false;
+            this.providersButton.Click += new System.EventHandler(this.providersButton_Click);
             // 
             // mainButton
             // 
-            this.mainButton.Activecolor = System.Drawing.Color.Transparent;
             this.mainButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.mainButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mainButton.BorderRadius = 0;
-            this.mainButton.ButtonText = "Principal";
             this.mainButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainButton.DisabledColor = System.Drawing.Color.Gray;
-            this.mainButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.mainButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("mainButton.Iconimage")));
-            this.mainButton.Iconimage_right = null;
-            this.mainButton.Iconimage_right_Selected = null;
-            this.mainButton.Iconimage_Selected = null;
-            this.mainButton.IconMarginLeft = 15;
-            this.mainButton.IconMarginRight = 0;
-            this.mainButton.IconRightVisible = true;
-            this.mainButton.IconRightZoom = 0D;
-            this.mainButton.IconVisible = true;
-            this.mainButton.IconZoom = 38D;
-            this.mainButton.IsTab = false;
-            this.mainButton.Location = new System.Drawing.Point(0, 151);
+            this.mainButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.mainButton.FlatAppearance.BorderSize = 0;
+            this.mainButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.mainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainButton.ForeColor = System.Drawing.Color.White;
+            this.mainButton.Image = ((System.Drawing.Image)(resources.GetObject("mainButton.Image")));
+            this.mainButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mainButton.Location = new System.Drawing.Point(0, 149);
             this.mainButton.Name = "mainButton";
-            this.mainButton.Normalcolor = System.Drawing.Color.OrangeRed;
-            this.mainButton.OnHovercolor = System.Drawing.Color.DimGray;
-            this.mainButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.mainButton.selected = false;
             this.mainButton.Size = new System.Drawing.Size(190, 37);
-            this.mainButton.TabIndex = 3;
+            this.mainButton.TabIndex = 0;
             this.mainButton.Text = "Principal";
-            this.mainButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mainButton.Textcolor = System.Drawing.Color.White;
-            this.mainButton.TextFont = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainButton.UseVisualStyleBackColor = false;
             this.mainButton.Click += new System.EventHandler(this.mainButton_Click);
             // 
             // logoPanel
@@ -367,24 +129,6 @@
             this.logoPanel.Size = new System.Drawing.Size(190, 149);
             this.logoPanel.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(31, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // containerPanel
-            // 
-            this.containerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.containerPanel.Location = new System.Drawing.Point(190, 42);
-            this.containerPanel.Name = "containerPanel";
-            this.containerPanel.Size = new System.Drawing.Size(710, 492);
-            this.containerPanel.TabIndex = 3;
-            // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
@@ -395,6 +139,157 @@
             this.welcomeLabel.Size = new System.Drawing.Size(80, 14);
             this.welcomeLabel.TabIndex = 0;
             this.welcomeLabel.Text = "Bienvenido";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(31, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // reportsButton
+            // 
+            this.reportsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.reportsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reportsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.reportsButton.FlatAppearance.BorderSize = 0;
+            this.reportsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.reportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reportsButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsButton.ForeColor = System.Drawing.Color.White;
+            this.reportsButton.Image = ((System.Drawing.Image)(resources.GetObject("reportsButton.Image")));
+            this.reportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.reportsButton.Location = new System.Drawing.Point(0, 453);
+            this.reportsButton.Name = "reportsButton";
+            this.reportsButton.Size = new System.Drawing.Size(190, 37);
+            this.reportsButton.TabIndex = 7;
+            this.reportsButton.Text = "Reportes";
+            this.reportsButton.UseVisualStyleBackColor = false;
+            // 
+            // usersButton
+            // 
+            this.usersButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.usersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.usersButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.usersButton.FlatAppearance.BorderSize = 0;
+            this.usersButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.usersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usersButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersButton.ForeColor = System.Drawing.Color.White;
+            this.usersButton.Image = ((System.Drawing.Image)(resources.GetObject("usersButton.Image")));
+            this.usersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.usersButton.Location = new System.Drawing.Point(0, 377);
+            this.usersButton.Name = "usersButton";
+            this.usersButton.Size = new System.Drawing.Size(190, 37);
+            this.usersButton.TabIndex = 6;
+            this.usersButton.Text = "Usuarios";
+            this.usersButton.UseVisualStyleBackColor = false;
+            // 
+            // cashboxButton
+            // 
+            this.cashboxButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.cashboxButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cashboxButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.cashboxButton.FlatAppearance.BorderSize = 0;
+            this.cashboxButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cashboxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cashboxButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashboxButton.ForeColor = System.Drawing.Color.White;
+            this.cashboxButton.Image = ((System.Drawing.Image)(resources.GetObject("cashboxButton.Image")));
+            this.cashboxButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cashboxButton.Location = new System.Drawing.Point(0, 187);
+            this.cashboxButton.Name = "cashboxButton";
+            this.cashboxButton.Size = new System.Drawing.Size(190, 37);
+            this.cashboxButton.TabIndex = 1;
+            this.cashboxButton.Text = "Caja";
+            this.cashboxButton.UseVisualStyleBackColor = false;
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.inventoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.inventoryButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.inventoryButton.FlatAppearance.BorderSize = 0;
+            this.inventoryButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.inventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventoryButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryButton.ForeColor = System.Drawing.Color.White;
+            this.inventoryButton.Image = ((System.Drawing.Image)(resources.GetObject("inventoryButton.Image")));
+            this.inventoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryButton.Location = new System.Drawing.Point(0, 339);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(190, 37);
+            this.inventoryButton.TabIndex = 5;
+            this.inventoryButton.Text = "Inventario";
+            this.inventoryButton.UseVisualStyleBackColor = false;
+            // 
+            // productsButton
+            // 
+            this.productsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.productsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.productsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.productsButton.FlatAppearance.BorderSize = 0;
+            this.productsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.productsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productsButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productsButton.ForeColor = System.Drawing.Color.White;
+            this.productsButton.Image = ((System.Drawing.Image)(resources.GetObject("productsButton.Image")));
+            this.productsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.productsButton.Location = new System.Drawing.Point(0, 301);
+            this.productsButton.Name = "productsButton";
+            this.productsButton.Size = new System.Drawing.Size(190, 37);
+            this.productsButton.TabIndex = 4;
+            this.productsButton.Text = "Productos";
+            this.productsButton.UseVisualStyleBackColor = false;
+            // 
+            // salesButton
+            // 
+            this.salesButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.salesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.salesButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.salesButton.FlatAppearance.BorderSize = 0;
+            this.salesButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.salesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salesButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesButton.ForeColor = System.Drawing.Color.White;
+            this.salesButton.Image = ((System.Drawing.Image)(resources.GetObject("salesButton.Image")));
+            this.salesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salesButton.Location = new System.Drawing.Point(0, 263);
+            this.salesButton.Name = "salesButton";
+            this.salesButton.Size = new System.Drawing.Size(190, 37);
+            this.salesButton.TabIndex = 3;
+            this.salesButton.Text = "Ventas";
+            this.salesButton.UseVisualStyleBackColor = false;
+            // 
+            // clientsButton
+            // 
+            this.clientsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.clientsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clientsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.clientsButton.FlatAppearance.BorderSize = 0;
+            this.clientsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.clientsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clientsButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientsButton.ForeColor = System.Drawing.Color.White;
+            this.clientsButton.Image = ((System.Drawing.Image)(resources.GetObject("clientsButton.Image")));
+            this.clientsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.clientsButton.Location = new System.Drawing.Point(0, 225);
+            this.clientsButton.Name = "clientsButton";
+            this.clientsButton.Size = new System.Drawing.Size(190, 37);
+            this.clientsButton.TabIndex = 2;
+            this.clientsButton.Text = "Clientes";
+            this.clientsButton.UseVisualStyleBackColor = false;
+            // 
+            // containerPanel
+            // 
+            this.containerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.containerPanel.Location = new System.Drawing.Point(190, 42);
+            this.containerPanel.Name = "containerPanel";
+            this.containerPanel.Size = new System.Drawing.Size(710, 492);
+            this.containerPanel.TabIndex = 3;
             // 
             // Main_Windows
             // 
@@ -423,15 +318,16 @@
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuFlatButton mainButton;
-        private Bunifu.Framework.UI.BunifuFlatButton cashboxButton;
-        private Bunifu.Framework.UI.BunifuFlatButton clientButton;
-        private Bunifu.Framework.UI.BunifuFlatButton salesButton;
-        private Bunifu.Framework.UI.BunifuFlatButton productsButton;
-        private Bunifu.Framework.UI.BunifuFlatButton inventoryButton;
-        private Bunifu.Framework.UI.BunifuFlatButton usersButton;
-        private Bunifu.Framework.UI.BunifuFlatButton reportsButton;
-        private System.Windows.Forms.Panel containerPanel;
         private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Button reportsButton;
+        private System.Windows.Forms.Button usersButton;
+        private System.Windows.Forms.Button inventoryButton;
+        private System.Windows.Forms.Button productsButton;
+        private System.Windows.Forms.Button salesButton;
+        private System.Windows.Forms.Button clientsButton;
+        private System.Windows.Forms.Button cashboxButton;
+        private System.Windows.Forms.Button mainButton;
+        private System.Windows.Forms.Button providersButton;
+        private System.Windows.Forms.Panel containerPanel;
     }
 }

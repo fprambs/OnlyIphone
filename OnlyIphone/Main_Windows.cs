@@ -31,7 +31,6 @@ namespace OnlyIphone
 
         private void mainButton_Click(object sender, EventArgs e)
         {
-            toggle(sender);
 
             if (!containerPanel.Controls.Contains(main.Instance))
             {
@@ -43,66 +42,6 @@ namespace OnlyIphone
             {
                 main.Instance.BringToFront();
             }
-        }
-
-        void toggle(object sender)
-        {
-            mainButton.selected = false;
-            cashboxButton.selected = false;
-            clientButton.selected = false;
-            salesButton.selected = false;
-            productsButton.selected = false;
-            inventoryButton.selected = false;
-            usersButton.selected = false;
-            reportsButton.selected = false;
-
-            mainButton.Normalcolor = Color.OrangeRed;
-            cashboxButton.Normalcolor = Color.OrangeRed;
-            clientButton.Normalcolor = Color.OrangeRed;
-            salesButton.Normalcolor = Color.OrangeRed;
-            productsButton.Normalcolor = Color.OrangeRed;
-            inventoryButton.Normalcolor = Color.OrangeRed;
-            usersButton.Normalcolor = Color.OrangeRed;
-            reportsButton.Normalcolor = Color.OrangeRed;
-
-
-            ((Bunifu.Framework.UI.BunifuFlatButton)sender).selected = true;
-            ((Bunifu.Framework.UI.BunifuFlatButton)sender).Normalcolor = Color.DimGray;
-        }
-
-        private void cashboxButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void clientButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void salesButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void productsButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void inventoryButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void usersButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
-        }
-
-        private void reportsButton_Click(object sender, EventArgs e)
-        {
-            toggle(sender);
         }
 
         private void headerPanel_MouseDown(object sender, MouseEventArgs e)
@@ -125,6 +64,20 @@ namespace OnlyIphone
         private void headerPanel_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void providersButton_Click(object sender, EventArgs e)
+        {
+            if (!containerPanel.Controls.Contains(providers.Instance))
+            {
+                containerPanel.Controls.Add(providers.Instance);
+                providers.Instance.Dock = DockStyle.Fill;
+                providers.Instance.BringToFront();
+            }
+            else
+            {
+                providers.Instance.BringToFront();
+            }
         }
     }
 }

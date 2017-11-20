@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace OnlyIphone
 {
@@ -28,6 +29,26 @@ namespace OnlyIphone
             connection.Close();
             return user;
 
+        }
+
+        public static int addProvider(Provider prv)
+        {
+            int retorno = 0;
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into provider (name, phone, email, address, city) values ('{0}','{1}','{2}', '{3}', '{4}')",
+                prv.Name, prv.Phone, prv.Email, prv.Address, prv.City), Connection.getConnection());
+                retorno = comando.ExecuteNonQuery();
+                return retorno;
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("No se pudo agregar el proveedor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return retorno;
+            }
         }
     }
 }

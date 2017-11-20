@@ -16,3 +16,5 @@ C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Microsoft.VisualBasic.Pow
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.Main_Windows.resources
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.main.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.providers.resources
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.addProviders.resources
