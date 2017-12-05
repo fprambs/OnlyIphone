@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addProviders));
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.iconPictureBox = new System.Windows.Forms.PictureBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
@@ -52,8 +53,8 @@
             this.citycrossPictureBox = new System.Windows.Forms.PictureBox();
             this.acceptButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.iconPictureBox = new System.Windows.Forms.PictureBox();
             this.headerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.namecheckPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonecheckPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailcheckPictureBox)).BeginInit();
@@ -64,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emailcrossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addresscrossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.citycrossPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // headerPanel
@@ -78,6 +78,16 @@
             this.headerPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseDown);
             this.headerPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseMove);
             this.headerPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.headerPanel_MouseUp);
+            // 
+            // iconPictureBox
+            // 
+            this.iconPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPictureBox.Image")));
+            this.iconPictureBox.Location = new System.Drawing.Point(15, 1);
+            this.iconPictureBox.Name = "iconPictureBox";
+            this.iconPictureBox.Size = new System.Drawing.Size(30, 30);
+            this.iconPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox.TabIndex = 0;
+            this.iconPictureBox.TabStop = false;
             // 
             // nameLabel
             // 
@@ -131,42 +141,52 @@
             // 
             // nameTextBox
             // 
+            this.nameTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.nameTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameTextBox.Location = new System.Drawing.Point(87, 57);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(160, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(160, 21);
             this.nameTextBox.TabIndex = 6;
             this.nameTextBox.Leave += new System.EventHandler(this.nameTextBox_Leave);
             // 
             // phoneTextBox
             // 
+            this.phoneTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.phoneTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneTextBox.Location = new System.Drawing.Point(87, 87);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(160, 20);
+            this.phoneTextBox.Size = new System.Drawing.Size(160, 21);
             this.phoneTextBox.TabIndex = 7;
             this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
             this.phoneTextBox.Leave += new System.EventHandler(this.phoneTextBox_Leave);
             // 
             // emailTextBox
             // 
+            this.emailTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.emailTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextBox.Location = new System.Drawing.Point(87, 117);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(160, 20);
+            this.emailTextBox.Size = new System.Drawing.Size(160, 21);
             this.emailTextBox.TabIndex = 8;
             this.emailTextBox.Leave += new System.EventHandler(this.emailTextBox_Leave);
             // 
             // addressTextBox
             // 
+            this.addressTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.addressTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressTextBox.Location = new System.Drawing.Point(86, 147);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(160, 20);
+            this.addressTextBox.Size = new System.Drawing.Size(160, 21);
             this.addressTextBox.TabIndex = 9;
             this.addressTextBox.Leave += new System.EventHandler(this.addressTextBox_Leave);
             // 
             // cityTextBox
             // 
+            this.cityTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.cityTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityTextBox.Location = new System.Drawing.Point(86, 177);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(160, 20);
+            this.cityTextBox.Size = new System.Drawing.Size(160, 21);
             this.cityTextBox.TabIndex = 10;
             this.cityTextBox.Leave += new System.EventHandler(this.cityTextBox_Leave);
             // 
@@ -282,38 +302,37 @@
             // 
             // acceptButton
             // 
+            this.acceptButton.BackColor = System.Drawing.Color.DarkOrange;
+            this.acceptButton.FlatAppearance.BorderSize = 0;
+            this.acceptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.acceptButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acceptButton.Location = new System.Drawing.Point(171, 217);
             this.acceptButton.Name = "acceptButton";
             this.acceptButton.Size = new System.Drawing.Size(75, 23);
             this.acceptButton.TabIndex = 21;
             this.acceptButton.Text = "Agregar";
-            this.acceptButton.UseVisualStyleBackColor = true;
+            this.acceptButton.UseVisualStyleBackColor = false;
             this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
             // 
             // cancelButton
             // 
+            this.cancelButton.BackColor = System.Drawing.SystemColors.Control;
+            this.cancelButton.FlatAppearance.BorderSize = 0;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelButton.Location = new System.Drawing.Point(86, 217);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 22;
             this.cancelButton.Text = "Cancelar";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.UseVisualStyleBackColor = false;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // iconPictureBox
-            // 
-            this.iconPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPictureBox.Image")));
-            this.iconPictureBox.Location = new System.Drawing.Point(15, 1);
-            this.iconPictureBox.Name = "iconPictureBox";
-            this.iconPictureBox.Size = new System.Drawing.Size(30, 30);
-            this.iconPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox.TabIndex = 0;
-            this.iconPictureBox.TabStop = false;
             // 
             // addProviders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(284, 254);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.acceptButton);
@@ -342,6 +361,7 @@
             this.Name = "addProviders";
             this.Text = "addProviders";
             this.headerPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.namecheckPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonecheckPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailcheckPictureBox)).EndInit();
@@ -352,7 +372,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emailcrossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addresscrossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.citycrossPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

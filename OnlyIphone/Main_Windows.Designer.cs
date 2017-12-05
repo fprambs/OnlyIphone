@@ -51,7 +51,7 @@
             // 
             // headerPanel
             // 
-            this.headerPanel.BackColor = System.Drawing.Color.DimGray;
+            this.headerPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
@@ -63,10 +63,10 @@
             // 
             // menuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuPanel.BackColor = System.Drawing.Color.DarkOrange;
+            this.menuPanel.Controls.Add(this.logoPanel);
             this.menuPanel.Controls.Add(this.providersButton);
             this.menuPanel.Controls.Add(this.mainButton);
-            this.menuPanel.Controls.Add(this.logoPanel);
             this.menuPanel.Controls.Add(this.reportsButton);
             this.menuPanel.Controls.Add(this.usersButton);
             this.menuPanel.Controls.Add(this.cashboxButton);
@@ -82,7 +82,7 @@
             // 
             // providersButton
             // 
-            this.providersButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.providersButton.BackColor = System.Drawing.Color.DarkOrange;
             this.providersButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.providersButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.providersButton.FlatAppearance.BorderSize = 0;
@@ -102,7 +102,7 @@
             // 
             // mainButton
             // 
-            this.mainButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.mainButton.BackColor = System.Drawing.Color.DarkOrange;
             this.mainButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.mainButton.FlatAppearance.BorderSize = 0;
@@ -122,9 +122,10 @@
             // 
             // logoPanel
             // 
+            this.logoPanel.BackColor = System.Drawing.Color.DarkOrange;
             this.logoPanel.Controls.Add(this.welcomeLabel);
             this.logoPanel.Controls.Add(this.pictureBox1);
-            this.logoPanel.Location = new System.Drawing.Point(0, 0);
+            this.logoPanel.Location = new System.Drawing.Point(1, 0);
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(190, 149);
             this.logoPanel.TabIndex = 0;
@@ -152,7 +153,7 @@
             // 
             // reportsButton
             // 
-            this.reportsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.reportsButton.BackColor = System.Drawing.Color.DarkOrange;
             this.reportsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reportsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.reportsButton.FlatAppearance.BorderSize = 0;
@@ -171,7 +172,7 @@
             // 
             // usersButton
             // 
-            this.usersButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.usersButton.BackColor = System.Drawing.Color.DarkOrange;
             this.usersButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.usersButton.FlatAppearance.BorderSize = 0;
@@ -190,7 +191,7 @@
             // 
             // cashboxButton
             // 
-            this.cashboxButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.cashboxButton.BackColor = System.Drawing.Color.DarkOrange;
             this.cashboxButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cashboxButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.cashboxButton.FlatAppearance.BorderSize = 0;
@@ -209,7 +210,7 @@
             // 
             // inventoryButton
             // 
-            this.inventoryButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.inventoryButton.BackColor = System.Drawing.Color.DarkOrange;
             this.inventoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.inventoryButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.inventoryButton.FlatAppearance.BorderSize = 0;
@@ -228,7 +229,7 @@
             // 
             // productsButton
             // 
-            this.productsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.productsButton.BackColor = System.Drawing.Color.DarkOrange;
             this.productsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.productsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.productsButton.FlatAppearance.BorderSize = 0;
@@ -248,7 +249,7 @@
             // 
             // salesButton
             // 
-            this.salesButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.salesButton.BackColor = System.Drawing.Color.DarkOrange;
             this.salesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salesButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.salesButton.FlatAppearance.BorderSize = 0;
@@ -267,7 +268,7 @@
             // 
             // clientsButton
             // 
-            this.clientsButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.clientsButton.BackColor = System.Drawing.Color.DarkOrange;
             this.clientsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clientsButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.clientsButton.FlatAppearance.BorderSize = 0;
@@ -286,6 +287,7 @@
             // 
             // containerPanel
             // 
+            this.containerPanel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.containerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.containerPanel.Location = new System.Drawing.Point(190, 42);
             this.containerPanel.Name = "containerPanel";

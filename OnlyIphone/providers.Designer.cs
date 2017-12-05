@@ -54,6 +54,7 @@
             this.providerdataGridView.AllowUserToAddRows = false;
             this.providerdataGridView.AllowUserToDeleteRows = false;
             this.providerdataGridView.AllowUserToOrderColumns = true;
+            this.providerdataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.providerdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.providerdataGridView.Location = new System.Drawing.Point(33, 81);
             this.providerdataGridView.Name = "providerdataGridView";
@@ -64,7 +65,7 @@
             // dayNameLabel
             // 
             this.dayNameLabel.AutoSize = true;
-            this.dayNameLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.dayNameLabel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.dayNameLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dayNameLabel.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayNameLabel.ForeColor = System.Drawing.Color.Black;
@@ -91,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dayNameLabel);
             this.Controls.Add(this.providerdataGridView);
