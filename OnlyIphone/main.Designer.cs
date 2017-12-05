@@ -121,7 +121,7 @@
             // timeLabel
             // 
             this.timeLabel.AutoSize = true;
-            this.timeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.timeLabel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.timeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.timeLabel.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.Black;
@@ -137,7 +137,7 @@
             this.rectangleShape8.BorderColor = System.Drawing.Color.Crimson;
             this.rectangleShape8.Location = new System.Drawing.Point(37, 188);
             this.rectangleShape8.Name = "rectangleShape8";
-            this.rectangleShape8.Size = new System.Drawing.Size(636, 116);
+            this.rectangleShape8.Size = new System.Drawing.Size(686, 116);
             // 
             // rectangleShape9
             // 
@@ -146,7 +146,7 @@
             this.rectangleShape9.BorderColor = System.Drawing.Color.IndianRed;
             this.rectangleShape9.Location = new System.Drawing.Point(37, 294);
             this.rectangleShape9.Name = "rectangleShape9";
-            this.rectangleShape9.Size = new System.Drawing.Size(636, 10);
+            this.rectangleShape9.Size = new System.Drawing.Size(686, 10);
             // 
             // shapeContainer1
             // 
@@ -162,7 +162,7 @@
             this.rectangleShape10,
             this.rectangleShape9,
             this.rectangleShape8});
-            this.shapeContainer1.Size = new System.Drawing.Size(710, 492);
+            this.shapeContainer1.Size = new System.Drawing.Size(760, 492);
             this.shapeContainer1.TabIndex = 29;
             this.shapeContainer1.TabStop = false;
             // 
@@ -171,7 +171,7 @@
             this.rectangleShape13.BackColor = System.Drawing.Color.DarkViolet;
             this.rectangleShape13.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape13.BorderColor = System.Drawing.Color.DarkViolet;
-            this.rectangleShape13.Location = new System.Drawing.Point(485, 433);
+            this.rectangleShape13.Location = new System.Drawing.Point(535, 433);
             this.rectangleShape13.Name = "rectangleShape13";
             this.rectangleShape13.Size = new System.Drawing.Size(187, 10);
             // 
@@ -180,7 +180,7 @@
             this.rectangleShape11.BackColor = System.Drawing.Color.Purple;
             this.rectangleShape11.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape11.BorderColor = System.Drawing.Color.Purple;
-            this.rectangleShape11.Location = new System.Drawing.Point(485, 347);
+            this.rectangleShape11.Location = new System.Drawing.Point(535, 347);
             this.rectangleShape11.Name = "rectangleShape11";
             this.rectangleShape11.Size = new System.Drawing.Size(187, 96);
             // 
@@ -189,7 +189,7 @@
             this.rectangleShape15.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.rectangleShape15.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape15.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.rectangleShape15.Location = new System.Drawing.Point(263, 433);
+            this.rectangleShape15.Location = new System.Drawing.Point(288, 433);
             this.rectangleShape15.Name = "rectangleShape15";
             this.rectangleShape15.Size = new System.Drawing.Size(187, 10);
             // 
@@ -198,7 +198,7 @@
             this.rectangleShape14.BackColor = System.Drawing.Color.Gold;
             this.rectangleShape14.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape14.BorderColor = System.Drawing.Color.Gold;
-            this.rectangleShape14.Location = new System.Drawing.Point(263, 347);
+            this.rectangleShape14.Location = new System.Drawing.Point(288, 347);
             this.rectangleShape14.Name = "rectangleShape14";
             this.rectangleShape14.Size = new System.Drawing.Size(187, 96);
             // 
@@ -266,7 +266,7 @@
             this.clientsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clientsLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientsLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.clientsLabel.Location = new System.Drawing.Point(280, 410);
+            this.clientsLabel.Location = new System.Drawing.Point(306, 410);
             this.clientsLabel.Name = "clientsLabel";
             this.clientsLabel.Size = new System.Drawing.Size(77, 18);
             this.clientsLabel.TabIndex = 42;
@@ -279,7 +279,7 @@
             this.clientsNumberLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clientsNumberLabel.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientsNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.clientsNumberLabel.Location = new System.Drawing.Point(277, 361);
+            this.clientsNumberLabel.Location = new System.Drawing.Point(303, 361);
             this.clientsNumberLabel.Name = "clientsNumberLabel";
             this.clientsNumberLabel.Size = new System.Drawing.Size(43, 42);
             this.clientsNumberLabel.TabIndex = 41;
@@ -289,7 +289,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Purple;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(604, 362);
+            this.pictureBox6.Location = new System.Drawing.Point(652, 361);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(60, 60);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -303,7 +303,7 @@
             this.ordersLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ordersLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ordersLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.ordersLabel.Location = new System.Drawing.Point(502, 410);
+            this.ordersLabel.Location = new System.Drawing.Point(550, 409);
             this.ordersLabel.Name = "ordersLabel";
             this.ordersLabel.Size = new System.Drawing.Size(83, 18);
             this.ordersLabel.TabIndex = 39;
@@ -316,7 +316,7 @@
             this.ordersNumberLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ordersNumberLabel.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ordersNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.ordersNumberLabel.Location = new System.Drawing.Point(499, 354);
+            this.ordersNumberLabel.Location = new System.Drawing.Point(547, 353);
             this.ordersNumberLabel.Name = "ordersNumberLabel";
             this.ordersNumberLabel.Size = new System.Drawing.Size(43, 42);
             this.ordersNumberLabel.TabIndex = 38;
@@ -363,7 +363,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Gold;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(372, 361);
+            this.pictureBox3.Location = new System.Drawing.Point(398, 361);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 60);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -394,7 +394,7 @@
             this.Controls.Add(this.dayNumerLabel);
             this.Controls.Add(this.shapeContainer1);
             this.Name = "main";
-            this.Size = new System.Drawing.Size(710, 492);
+            this.Size = new System.Drawing.Size(760, 492);
             this.Load += new System.EventHandler(this.main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

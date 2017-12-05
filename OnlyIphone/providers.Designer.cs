@@ -38,6 +38,10 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(42, 400);
@@ -46,7 +50,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // providerdataGridView
@@ -59,7 +63,7 @@
             this.providerdataGridView.Location = new System.Drawing.Point(33, 81);
             this.providerdataGridView.Name = "providerdataGridView";
             this.providerdataGridView.ReadOnly = true;
-            this.providerdataGridView.Size = new System.Drawing.Size(493, 150);
+            this.providerdataGridView.Size = new System.Drawing.Size(543, 150);
             this.providerdataGridView.TabIndex = 1;
             // 
             // dayNameLabel
@@ -77,15 +81,19 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(451, 391);
+            this.button2.Location = new System.Drawing.Point(501, 400);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 56);
             this.button2.TabIndex = 27;
             this.button2.Text = "Actualizar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // providers
@@ -98,7 +106,7 @@
             this.Controls.Add(this.providerdataGridView);
             this.Controls.Add(this.button1);
             this.Name = "providers";
-            this.Size = new System.Drawing.Size(710, 492);
+            this.Size = new System.Drawing.Size(760, 492);
             this.Load += new System.EventHandler(this.providers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.providerdataGridView)).EndInit();
             this.ResumeLayout(false);

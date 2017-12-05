@@ -93,7 +93,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "products";
-            this.Size = new System.Drawing.Size(710, 492);
+            this.Size = new System.Drawing.Size(760, 492);
             this.ResumeLayout(false);
 
         }
