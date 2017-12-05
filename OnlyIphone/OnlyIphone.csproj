@@ -147,6 +147,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="providers.resx">
       <DependentUpon>providers.cs</DependentUpon>
@@ -169,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="application_icon.ico" />
+    <None Include="Resources\18740092_1851243531863286_2642745955361773779_n.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

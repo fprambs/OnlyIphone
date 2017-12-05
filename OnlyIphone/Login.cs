@@ -22,6 +22,7 @@ namespace OnlyIphone
         public Login()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         bool validate_username = false;
@@ -118,9 +119,5 @@ namespace OnlyIphone
             this.Close();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
