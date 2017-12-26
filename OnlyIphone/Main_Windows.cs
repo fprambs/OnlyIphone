@@ -93,5 +93,19 @@ namespace OnlyIphone
                 products.Instance.BringToFront();
             }
         }
+
+        private void clientsButton_Click(object sender, EventArgs e)
+        {
+            if (!containerPanel.Controls.Contains(client.Instance))
+            {
+                containerPanel.Controls.Add(client.Instance);
+                client.Instance.Dock = DockStyle.Fill;
+                client.Instance.BringToFront();
+            }
+            else
+            {
+                client.Instance.BringToFront();
+            }
+        }
     }
 }

@@ -55,6 +55,31 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="P:OnlyIphone.client.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="F:OnlyIphone.client.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:OnlyIphone.client.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:OnlyIphone.client.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
         <member name="T:OnlyIphone.Connection">
             <summary>
             Class that provides the connection to the database

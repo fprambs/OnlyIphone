@@ -80,6 +80,12 @@
     <Compile Include="addType.Designer.cs">
       <DependentUpon>addType.cs</DependentUpon>
     </Compile>
+    <Compile Include="client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Login.cs">
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addType.resx">
       <DependentUpon>addType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

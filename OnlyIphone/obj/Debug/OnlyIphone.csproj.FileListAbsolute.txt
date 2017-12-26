@@ -40,3 +40,4 @@ D:\Documents\Git\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.csproj.GenerateResou
 D:\Documents\Git\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.csproj.CoreCompileInputs.cache
 D:\Documents\Git\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.exe
 D:\Documents\Git\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.pdb
+C:\Users\felip\Desktop\OnlyIphone\OnlyIphone\obj\Debug\OnlyIphone.client.resources
